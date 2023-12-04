@@ -33,7 +33,7 @@ export const Header = () => {
   
     return (
     <header>
-      <nav className="bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900">
+      <nav className="bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900 dark:text-white">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/**logo and Name */}
           <Link to="/" className="flex items-center">
