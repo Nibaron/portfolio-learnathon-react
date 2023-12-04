@@ -1,10 +1,14 @@
 import React from 'react'
-import Hero from './components/Hero';
+import { About, Contact, Skills } from './components';
+import Projects from './components/Projects';
 
 export const HomePage = () => {
   return (
     <main>
-      <Hero/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </main>
   )
 }

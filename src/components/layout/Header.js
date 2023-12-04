@@ -140,16 +140,6 @@ export const Header = () => {
                   Projects
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/contacts"
-                  className={({ isActive }) =>
-                    isActive ? activeHeader : inactiveHeader
-                  }
-                >
-                  Contacts
-                </NavLink>
-              </li>
             </ul>
           </div>
         </div>
