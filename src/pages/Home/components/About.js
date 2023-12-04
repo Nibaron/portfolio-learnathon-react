@@ -19,6 +19,11 @@ export const About = () => {
     window.open("https://leetcode.com/Nibaron_RUET/", "_blank");
   };
 
+  const gotoProjects=()=>{
+    const aboutSection = document.querySelector("#projects");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <section
       id="about"
@@ -34,12 +39,12 @@ export const About = () => {
             Frontend development, competitive programming and machine Learning.
           </p>
           <div className="flex justify-center">
-            <a
-              href="/projects"
+            <button
+              onClick={gotoProjects}
               className="flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
             >
               My Projects
-            </a>
+            </button>
             <a
               href={resumePdf}
               download="Nibaron_Kumar_Das_Resume.pdf"

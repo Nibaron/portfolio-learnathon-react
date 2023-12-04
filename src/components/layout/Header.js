@@ -7,6 +7,15 @@ export const Header = () => {
     JSON.parse(localStorage.getItem("darkMode")) || false
   );
 
+  const gotoProjects=()=>{
+    const aboutSection = document.querySelector("#projects");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+  const gotoSkills=()=>{
+    const aboutSection = document.querySelector("#skills");
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
 
@@ -121,24 +130,24 @@ export const Header = () => {
               </li>
 
               <li>
-                <NavLink
-                  to="/skills"
+                <button
+                  onClick={gotoSkills}
                   className={({ isActive }) =>
                     isActive ? activeHeader : inactiveHeader
                   }
                 >
                   Skills
-                </NavLink>
+                </button>
               </li>
               <li>
-                <NavLink
-                  to="/projects"
+                <button
+                  onClick={gotoProjects}
                   className={({ isActive }) =>
                     isActive ? activeHeader : inactiveHeader
                   }
                 >
                   Projects
-                </NavLink>
+                </button>
               </li>
             </ul>
           </div>
