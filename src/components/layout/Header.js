@@ -38,7 +38,7 @@ export const Header = () => {
           {/**logo and Name */}
           <Link to="/" className="flex items-center">
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Nibaron Kumar Das
+              Nibaron's Portfolio
             </span>
           </Link>
 
