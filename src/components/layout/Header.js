@@ -125,7 +125,7 @@ export const Header = () => {
                   }
                   aria-current="page"
                 >
-                  Home
+                  {`<Home/>`}
                 </NavLink>
               </li>
 

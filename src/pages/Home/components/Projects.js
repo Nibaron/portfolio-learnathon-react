@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../components/ProjectsData";
+import { projects } from "../../../data/ProjectsData";
 
 export default function Projects() {
   return (
@@ -29,7 +29,7 @@ export default function Projects() {
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center border-4 border-slate-300"
                 />
-                <div className="px-8 py-10 relative z-10 w-full border-4 bg-slate-800 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 bg-slate-800 opacity-0 hover:opacity-90">
                   <h1 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h1>
